@@ -1,0 +1,5 @@
+<map id="libsandbox&#45;internal.h" name="libsandbox&#45;internal.h">
+<area shape="rect" id="node3" href="$args_8c.xhtml" title="Code for handling arguments to sandboxes." alt="" coords="5,83,61,111"/>
+<area shape="rect" id="node5" href="$libsandbox-capsicum_8c.xhtml" title="Capsicum backend." alt="" coords="86,83,241,111"/>
+<area shape="rect" id="node7" href="$libsandbox_8c.xhtml" title="Portable portion of the implementation." alt="" coords="266,83,360,111"/>
+</map>
