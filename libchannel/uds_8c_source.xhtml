@@ -138,7 +138,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;uds_create(<span class="keywordtype">int</span> sock)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        uds_channel *<a class="code" href="structchannel.xhtml" title="[opaque] A communications channel for sending data and capabilities (eg file descriptors and channels...">channel</a> = malloc(<span class="keyword">sizeof</span>(uds_channel));</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="group__libchannel.xhtml#ga4b73e821a54fd610cc4bf37b0df26b8f" title="Initialize a channel.">channel_init</a>(&amp;channel-&gt;super, UDS_MAGIC, uds_size, uds_copy, uds_send);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        channel_init(&amp;channel-&gt;super, UDS_MAGIC, uds_size, uds_copy, uds_send);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        channel-&gt;socket = sock;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
@@ -188,7 +188,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 1 2012 01:13:25 for libchannel by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 1 2012 01:19:09 for libchannel by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

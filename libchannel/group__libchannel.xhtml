@@ -113,8 +113,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memitem:ga87ef7679cb6cd0c89118ccd42b075dbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga87ef7679cb6cd0c89118ccd42b075dbe"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__libchannel.xhtml#ga87ef7679cb6cd0c89118ccd42b075dbe">channel_send</a> (struct <a class="el" href="structchannel.xhtml">channel</a> *, struct <a class="el" href="structmessage.xhtml">message</a> *)</td></tr>
 <tr class="memdesc:ga87ef7679cb6cd0c89118ccd42b075dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data and/or capabilities over a channel. <br/></td></tr>
-<tr class="memitem:ga4b73e821a54fd610cc4bf37b0df26b8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__libchannel.xhtml#ga4b73e821a54fd610cc4bf37b0df26b8f">channel_init</a> (<a class="el" href="structchannel.xhtml">channel</a> *, int magic, int(*size)(struct <a class="el" href="structchannel.xhtml">channel</a> *), int(*copy)(struct <a class="el" href="structchannel.xhtml">channel</a> *, void *dest), int(*send)(struct <a class="el" href="structchannel.xhtml">channel</a> *, struct <a class="el" href="structmessage.xhtml">message</a> *))</td></tr>
-<tr class="memdesc:ga4b73e821a54fd610cc4bf37b0df26b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a channel.  <a href="#ga4b73e821a54fd610cc4bf37b0df26b8f"></a><br/></td></tr>
 <tr class="memitem:ga02f51b872a4fda6696d63edca2f1acab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga02f51b872a4fda6696d63edca2f1acab"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__libchannel.xhtml#ga02f51b872a4fda6696d63edca2f1acab">channel_size</a> (<a class="el" href="structchannel.xhtml">channel</a> *)</td></tr>
 <tr class="memdesc:ga02f51b872a4fda6696d63edca2f1acab"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many bytes does a particular <a class="el" href="structchannel.xhtml">channel</a> take to store? <br/></td></tr>
@@ -164,62 +162,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 
 </div>
 </div>
-<a class="anchor" id="ga4b73e821a54fd610cc4bf37b0df26b8f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void channel_init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel.xhtml">channel</a> *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>magic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int(*)(struct <a class="el" href="structchannel.xhtml">channel</a> *)&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int(*)(struct <a class="el" href="structchannel.xhtml">channel</a> *, void *dest)&#160;</td>
-          <td class="paramname"><em>copy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int(*)(struct <a class="el" href="structchannel.xhtml">channel</a> *, struct <a class="el" href="structmessage.xhtml">message</a> *)&#160;</td>
-          <td class="paramname"><em>send</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize a channel. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">magic</td><td>implementation-specific magic value </td></tr>
-    <tr><td class="paramname">size</td><td>function: get total size of channel struct </td></tr>
-    <tr><td class="paramname">copy</td><td>function: copy channel to somewhere in memory </td></tr>
-    <tr><td class="paramname">send</td><td>function: send a message over the channel</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on error </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="gaf4a4f299da71eec401829b3705784381"></a>
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +203,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 1 2012 01:13:25 for libchannel by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 1 2012 01:19:09 for libchannel by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
